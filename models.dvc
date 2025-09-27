@@ -1,0 +1,14 @@
+md5: 8ac650e244e5c9ea6b8251188fb539d4
+frozen: true
+deps:
+- path: models
+  repo:
+    url: 
+      https://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@github.com:/potapovjakov/dendroscan-ml.git
+    rev_lock: ecab4ddc2a7f7b94f2bac54f137dc31f6afc19c2
+outs:
+- md5: 35f225d824ef5620be0c175717431849.dir
+  size: 54863054
+  nfiles: 3
+  hash: md5
+  path: models

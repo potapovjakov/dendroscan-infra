@@ -4,3 +4,4 @@ venv
 *.crt
 *.key
 models/*
+/models
