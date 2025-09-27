@@ -18,7 +18,7 @@ services:
       - app-network
 
   ml-service:
-    image: potapovjakov/dendroscan-ml:dev
+    image: potapovjakov/dendroscan-ml:dev-torch
     env_file:
       - .env
     ports:
