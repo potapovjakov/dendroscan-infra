@@ -3,4 +3,3 @@ venv
 .env
 *.crt
 *.key
-/models
