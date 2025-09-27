@@ -1,6 +1,6 @@
 services:
   backend:
-    image: potapovjakov/dendroscan-api:v0.0.1
+    image: potapovjakov/dendroscan-api:dev
     env_file:
       - .env
     ports:
@@ -18,7 +18,7 @@ services:
       - app-network
 
   ml-service:
-    image: potapovjakov/dendroscan-ml:v0.0.1
+    image: potapovjakov/dendroscan-ml:dev
     env_file:
       - .env
     ports:
@@ -26,6 +26,8 @@ services:
     restart: unless-stopped
     depends_on:
       - backend
+    volumes:
+      - ./models:/app/models
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 30s
@@ -63,7 +65,7 @@ services:
       - app-network
 
   frontend:
-    image: potapovjakov/dendroscan-frontend:v0.0.1
+    image: potapovjakov/dendroscan-front:dev
     volumes:
       - result_build:/app/result_build/build/
     stdin_open: true
@@ -80,4 +82,3 @@ networks:
 volumes:
   result_build:
   postgres_data:
-
