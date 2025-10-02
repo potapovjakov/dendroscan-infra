@@ -101,8 +101,12 @@
     ```bash
     cp .env.example .env
     ```
-2. Заполните файл актуальными данными
-3. Склонируйте репозиторий:
+2. Скачайте веса дял моделей по ссылке: https://disk.yandex.ru/d/CZrT-Wws1XJNqw
+   - Это 2 файла - `best.pt` и `mobileclip_s1.pt`
+   - Скопируйте эти файлы в папку `models`
+
+3. Заполните файл актуальными данными
+4. Склонируйте репозиторий:
    ```bash
    git clone https://github.com/dendroscan/dendroscan-infra.git
    ```
