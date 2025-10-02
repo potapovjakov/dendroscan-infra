@@ -14,7 +14,6 @@
 - `minio`
 И приложений:
 - `dendroscan-bot`: Telegram-бот для взаимодействия с пользователем через телеграм. https://github.com/potapovjakov/dendroscan-bot.git
-- `dendroscan-max-bot`: Бот для взаимодействия с пользователем через max (в разработке). https://github.com/potapovjakov/dendroscan-max-bot.git
 - `dendroscan-android`: Android-приложение для взаимодействия с пользователем непосредственно со смартфона. https://github.com/potapovjakov/dendroscan-android.git
 
 
